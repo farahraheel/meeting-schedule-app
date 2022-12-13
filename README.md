@@ -1,6 +1,8 @@
 # Exam3
 
-## To install Node modules please run 
+## To install node_modules please run 
 ```
 npm i
 ```
+
+
