@@ -1,8 +1,10 @@
 # Exam3
 
-## To install node_modules please run 
+## Please don't forget to install node_modules for backend and fronted folders: 
 ```
 npm i
+npm start
 ```
+
 
 
