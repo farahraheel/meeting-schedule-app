@@ -1,6 +1,8 @@
 # Exam3
 
-## Please don't forget to install node_modules for backend and fronted folders: 
+### Required - xampp client installed.
+
+## Please don't forget to install node_modules for the backend and frontend folders: 
 ```
 npm i
 npm start
