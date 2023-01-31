@@ -36,6 +36,6 @@ ___
 
 #### The project will run automatically on npm start
 OR
-Go to: http://localhost:4200/
+Go to: http://localhost:3000/
 
 ## Enjoy!
