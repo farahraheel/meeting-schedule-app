@@ -1,5 +1,5 @@
-# exam4-angular-john-bryce
-## Angular, Node.js+express, MongoDB 
+# Third exam from "John Bryce" college
+## React, Node.js+express, MySQL 
 
 ### Project requirements:
 ##### MySQL version: v5.2 - or - XAMPP client
