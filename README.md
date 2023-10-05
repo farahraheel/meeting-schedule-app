@@ -1,5 +1,5 @@
 # Meeting Schedule Project
-## Third exam from "John Bryce" college based on: React, Node.js+express, MySQL 
+## The project based on: React, Node.js+express, MySQL 
 
 ### Project requirements:
 ##### MySQL version: v5.2 - or - XAMPP client
