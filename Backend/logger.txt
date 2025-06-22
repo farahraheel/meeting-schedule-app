@@ -99,3 +99,11 @@
 ----------------------------
 12/7/2022, 10:23:53 AM 	 ER_NO_REFERENCED_ROW_2: Cannot add or update a child row: a foreign key constraint fails (`meetingschedule`.`meetings`, CONSTRAINT `meetings_ibfk_1` FOREIGN KEY (`teamId`) REFERENCES `teams` (`id`) ON DELETE CASCADE)
 ----------------------------
+6/21/2025, 6:10:20 PM 	 ER_ACCESS_DENIED_ERROR: Access denied for user 'root'@'localhost' (using password: NO)
+----------------------------
+6/21/2025, 6:10:20 PM 	 ER_ACCESS_DENIED_ERROR: Access denied for user 'root'@'localhost' (using password: NO)
+----------------------------
+6/21/2025, 6:14:53 PM 	 ER_BAD_FIELD_ERROR: Unknown column 'M.description' in 'field list'
+----------------------------
+6/21/2025, 6:15:12 PM 	 ER_BAD_FIELD_ERROR: Unknown column 'M.description' in 'field list'
+----------------------------

@@ -26,3 +26,12 @@ export class UnauthorizedErrorModel extends ErrorModel {
     }
 }
 
+// إضافة تعارض المواعيد مع اقتراح بديل
+export class ConflictErrorModel extends ErrorModel {
+    public suggestion: any;
+
+    public constructor(suggestion: any) {
+        super("Meeting time conflict", 409);
+        this.suggestion = suggestion;
+    }
+}

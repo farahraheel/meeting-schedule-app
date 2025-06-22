@@ -1,4 +1,4 @@
-enum Rooms {
+export enum Rooms {
     RED = "red",
     BLUE = "blue",
     GREEN = "green",
@@ -12,13 +12,13 @@ class MeetingModel {
     public description: string;
     public room: Rooms;
 
-    public constructor(meeting: MeetingModel) {
-        this.id = meeting.id;
-        this.teamId = meeting.teamId;
-        this.startTime = meeting.startTime;
-        this.endTime = meeting.endTime;
-        this.description = meeting.description;
-        this.room = meeting.room;
+    public constructor(meeting?: Partial<MeetingModel>) {
+        this.id = meeting?.id || 0;
+        this.teamId = meeting?.teamId || 0;
+        this.startTime = meeting?.startTime || "";
+        this.endTime = meeting?.endTime || "";
+        this.description = meeting?.description || "";
+        this.room = meeting?.room || Rooms.RED;
     }
 }
 

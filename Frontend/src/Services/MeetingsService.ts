@@ -7,14 +7,12 @@ class MeetingsService {
 
     public async getAllTeams(): Promise<TeamModel[]> {
         const response = await axios.get<TeamModel[]>(appConfig.teamsUrl);
-        const teams = response.data;
-        return teams;
+        return response.data;
     }
 
     public async getMeetingsByTeams(teamId: number): Promise<MeetingModel[]> {
-        const response = await axios.get<MeetingModel[]>(appConfig.meetingsUrl + '/' + teamId);
-        const meetings = response.data;
-        return meetings;
+        const response = await axios.get<MeetingModel[]>(`${appConfig.meetingsUrl}/${teamId}`);
+        return response.data;
     }
 
     public async addMeeting(meeting: MeetingModel): Promise<void> {
@@ -22,7 +20,12 @@ class MeetingsService {
     }
 
     public async deleteMeeting(id: number): Promise<void> {
-        await axios.delete(appConfig.meetingsUrl + id);
+        await axios.delete(`${appConfig.meetingsUrl}/${id}`);
+    }
+
+    public async suggestMeeting(teamId: number): Promise<{ startTime: string; endTime: string; room: string } | null> {
+        const response = await axios.get(`${appConfig.meetingsUrl}/suggest/${teamId}`);
+        return response.data;
     }
 }
 

@@ -1,6 +1,6 @@
 class Config {
-    public meetingsUrl = "http://localhost:3001/api/meetings";
-    public teamsUrl = "http://localhost:3001/api/teams";
+    public meetingsUrl = "http://localhost:30000/api/meetings";
+    public teamsUrl = "http://localhost:30000/api/teams";
 
 }
 
